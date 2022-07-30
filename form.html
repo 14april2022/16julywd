@@ -14,25 +14,48 @@
         input id
      -->
 
-    <form action="" method="POST">
+    <form action="" method="post">
       <table cellpadding="10">
         <tr>
-          <td><label for="">First Name</label></td>
-          <td><input type="text" name="fname" /></td>
+          <td><label for="fname">First Name</label></td>
+          <td>
+            <input
+              type="text"
+              name="fname"
+              id="fname"
+              required
+              placeholder="Enter Your Name"
+            />
+          </td>
         </tr>
         <tr>
           <td>
-            <label for="">Last Name</label>
+            <label for="lastname">Last Name</label>
           </td>
-          <td><input type="text" name="lname" /></td>
+          <td>
+            <input
+              type="text"
+              name="lname"
+              id="lastname"
+              required
+              tabindex="3"
+            />
+          </td>
         </tr>
         <tr>
           <td><label for="">Email</label></td>
-          <td><input type="email" name="email" /></td>
+          <td>
+            <input
+              type="email"
+              name="email"
+              placeholder="xyz@gmail.com"
+              tabindex="1"
+            />
+          </td>
         </tr>
         <tr>
           <td><label for="">Password</label></td>
-          <td><input type="password" name="password" /></td>
+          <td><input type="password" name="password" tabindex="2" /></td>
         </tr>
         <tr>
           <td><label for="">Gender</label></td>
@@ -44,7 +67,30 @@
           </td>
         </tr>
         <tr>
-          <td><input type="submit" /></td>
+          <td><label for="">Hobbies</label></td>
+          <td>
+            <input type="checkbox" id="cricket" />
+            <label for="cricket">Cricket</label>
+            <input type="checkbox" id="football" />
+            <label for="football">Football</label>
+            <input type="checkbox" id="tennis" />
+            <label for="tennis">Tennis</label>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="city">City</label></td>
+          <td>
+            <select name="city" id="city">
+              <option value="surat">Surat</option>
+              <option value="daman">Daman</option>
+              <option value="vapi">Vapi</option>
+              <option value="valsad">Valsad</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><input type="submit" value="Send Data" /></td>
+          <td><input type="reset" value="Clear" /></td>
         </tr>
       </table>
     </form>
